@@ -1,39 +1,44 @@
 <template>
   <div>
-    <div class="topnav">
-      <div class="logo">LOGO</div>
-       <ul class="menu">
-         <li>菜单1</li>
-         <li>菜单2</li>
-       </ul>
-    </div>
+    <Topnav/>
     <div class="banner">
       <h1>花园UI</h1>
       <h2>一个厉害的UI框架</h2>
-      <a href="">GitHub</a>
-      <a href="">开始</a>
+      <p class="actions">
+        <a href="https://github.com/MinorN/huayuan-ui">GitHub</a>
+        <a href="">开始</a>
+      </p>
     </div>
   </div>
 </template>
 
 
-
 <style lang="scss" scoped>
-.topnav {
-  background: pink;
+.banner {
+  padding: 100px 0;
   display: flex;
-  padding: 16px;
-  > .logo {
-    max-width: 6em;
-    margin-right: auto;
-  }
-  > .menu {
-    display: flex;
-    white-space: nowrap;
-    flex-wrap: nowrap;
-    > li {
-      margin: 0 1em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: lightgreen;
+  > .actions{
+    padding: 8px 0;
+    a {
+      margin:0 8px;
+      background: #fff;
+      display: inline-block;
+      $h: 28px;
+      height: $h;
+      line-height: $h;
+      border-radius: $h/2;
+      padding: 0 8px;
     }
   }
 }
 </style>
+<script>
+import Topnav from "../components/Topnav.vue";
+export default {
+  components: {Topnav}
+}
+</script>
