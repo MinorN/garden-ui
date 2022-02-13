@@ -1,6 +1,6 @@
 <template>
   <div>
-    Switch 示例
+    默认页面
   </div>
 </template>
 
