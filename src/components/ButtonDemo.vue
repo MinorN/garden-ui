@@ -7,6 +7,12 @@
     <Button theme="link">你好</Button>
     <Button theme="text">你好</Button>
   </div>
+  <h1>示例2</h1>
+  <div>
+    <Button size="big">big按钮</Button>
+    <Button >normal按钮</Button>
+    <Button size="small">small按钮</Button>
+  </div>
 </template>
 
 
