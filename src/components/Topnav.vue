@@ -5,8 +5,7 @@
       <li>菜单1</li>
       <li>菜单2</li>
     </ul>
-    <span class="toggleAside"  @click="toggleMenu">
-    </span>
+    <span class="toggleAside"  @click="toggleMenu"></span>
   </div>
 </template>
 <script lang="ts">
@@ -47,7 +46,6 @@ export default {
     }
   }
   > .toggleAside{
-    display: inline-block;
     width: 24px;
     height: 24px;
     background: red;
