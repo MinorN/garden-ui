@@ -1,21 +1,23 @@
 <template>
   <template v-if="visible">
-    <div class="garden-dialog-overlay" @click="OnClickOverlay"></div>
-    <div class="garden-dialog-wrapper">
-      <div class="garden-dialog">
-        <header>
-          <slot name="title"/>
-          <span @click="close" class="garden-dialog-close"></span>
-        </header>
-        <main>
-          <slot name="content"/>
-        </main>
-        <footer>
-          <Button @click="ok" level="main">OK</Button>
-          <Button @click="cancel">Cancel</Button>
-        </footer>
+    <Teleport to="body">
+      <div class="garden-dialog-overlay" @click="OnClickOverlay"></div>
+      <div class="garden-dialog-wrapper">
+        <div class="garden-dialog">
+          <header>
+            <slot name="title"/>
+            <span @click="close" class="garden-dialog-close"></span>
+          </header>
+          <main>
+            <slot name="content"/>
+          </main>
+          <footer>
+            <Button @click="ok" level="main">OK</Button>
+            <Button @click="cancel">Cancel</Button>
+          </footer>
+        </div>
       </div>
-    </div>
+    </Teleport>
   </template>
 </template>
 
