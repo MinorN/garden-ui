@@ -4,12 +4,11 @@
     <div class="garden-dialog-wrapper">
       <div class="garden-dialog">
         <header>
-          标题
+          <slot name="title"/>
           <span @click="close" class="garden-dialog-close"></span>
         </header>
         <main>
-          <p>第一行字</p>
-          <p>第二行字</p>
+          <slot name="content"/>
         </main>
         <footer>
           <Button @click="ok" level="main">OK</Button>
@@ -51,8 +50,8 @@ export default {
       }
     };
     const ok = () => {
-      if(props.ok?.()!==false){
-        close()
+      if (props.ok?.() !== false) {
+        close();
       }
     };
     const cancel = () => {
