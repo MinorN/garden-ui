@@ -1,5 +1,5 @@
 <template>
-  <button class="garden-switch" @click="toggle" :class="{'garden-switch':value}"><span></span></button>
+  <button class="garden-switch" @click="toggle" :class="{'garden-checked':value}"><span></span></button>
 </template>
 
 <script lang="ts">
