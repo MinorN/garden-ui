@@ -7,7 +7,7 @@
         <h2>一个厉害的UI框架</h2>
         <p class="actions">
           <a href="https://github.com/MinorN/huayuan-ui">GitHub</a>
-          <router-link to="/doc">开始</router-link>
+          <router-link to="/doc/intro">开始</router-link>
         </p>
       </div>
     </div>
@@ -52,73 +52,74 @@ $color: #007974;
 }
 
 .features {
-    margin: 64px auto;
-    width: 400px;
-    @media (min-width: 800px) {
-      width: 800px;
-    }
-    @media (min-width: 1200px) {
-      width: 1200px;
-    }
-    > ul {
-      display: flex;
-      flex-wrap: wrap;
+  margin: 64px auto;
+  width: 400px;
+  @media (min-width: 800px) {
+    width: 800px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 
-      > li {
-        width: 400px;
-        margin: 16px 0;
-        display: grid;
-        justify-content: start;
-        align-content: space-between;
-        grid-template-areas:
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    > li {
+      width: 400px;
+      margin: 16px 0;
+      display: grid;
+      justify-content: start;
+      align-content: space-between;
+      grid-template-areas:
         "icon title"
         "icon text";
-        grid-template-columns: 80px auto;
-        grid-template-rows: 1fr auto;
+      grid-template-columns: 80px auto;
+      grid-template-rows: 1fr auto;
 
-        > svg {
-          grid-area: icon;
-          width: 64px;
-          height: 64px;
-        }
+      > svg {
+        grid-area: icon;
+        width: 64px;
+        height: 64px;
+      }
 
-        > h3 {
-          grid-area: title;
-          font-size: 28px;
-        }
+      > h3 {
+        grid-area: title;
+        font-size: 28px;
+      }
 
-        > p {
-          grid-area: text
-        }
+      > p {
+        grid-area: text
       }
     }
   }
+}
 
-  .banner {
-    padding: 100px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: $color;
+.banner {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $color;
 
-    > .actions {
-      padding: 8px 0;
+  > .actions {
+    padding: 8px 0;
 
-      a {
-        margin: 0 8px;
-        background: $green;
-        color: white;
-        display: inline-block;
-        padding: 8px 24px;
-        border-radius: $border-radius;
+    a {
+      margin: 0 8px;
+      background: $green;
+      color: white;
+      display: inline-block;
+      padding: 8px 24px;
+      border-radius: $border-radius;
 
-        &:hover {
-          text-decoration: none;
-        }
+      &:hover {
+        text-decoration: none;
       }
     }
   }
+}
 </style>
 <script>
 import Topnav from "../components/Topnav.vue";
