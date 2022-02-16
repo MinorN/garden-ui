@@ -1,20 +1,6 @@
 <template>
   <div>
-    <h2>Switch 组件示例</h2>
-    <div>
-      <h3><span>#</span> 基础用法 </h3>
-      <p>使用<span>v-model</span>绑定一个<span>Boolean</span>类型的变量到<span>Switch</span>组件</p>
-      <div class="demo">
-        <h2>常规用法</h2>
-        <div class="demo-component"><Switch v-model:value="bool"/></div>
-        <div class="code-watch"><button>查看代码</button></div>
-        <div class="code-demo">
-          <pre class="code">
-            <span class="tag"></span>
-          </pre>
-        </div>
-      </div>
-    </div>
+    <Switch v-model:value="bool"/>
   </div>
 </template>
 
