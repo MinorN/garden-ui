@@ -1,74 +1,55 @@
 <template>
-  <div>Button 示例</div>
-  <h1>示例1</h1>
   <div>
-    <Button>你好</Button>
-    <Button theme="button">你好</Button>
-    <Button theme="link">你好</Button>
-    <Button theme="text">你好</Button>
-  </div>
-  <h1>示例2</h1>
-  <div>
-    <div>
-      <Button size="big">big按钮</Button>
-      <Button >normal按钮</Button>
-      <Button size="small">small按钮</Button>
-    </div>
-    <div>
-      <Button theme="link" size="big">big按钮</Button>
-      <Button theme="link" >normal按钮</Button>
-      <Button theme="link" size="small">small按钮</Button>
-    </div>
-    <div>
-      <Button theme="text" size="big">big按钮</Button>
-      <Button theme="text" >normal按钮</Button>
-      <Button theme="text" size="small">small按钮</Button>
-    </div>
-
-  </div>
-  <h1>示例3</h1>
-  <div>
-    <div>
-      <Button level="main">主要按钮</Button>
-      <Button>普通按钮</Button>
-      <Button level="danger">危险按钮</Button>
-    </div>
-    <div>
-      <Button theme="link" level="main">主要链接按钮</Button>
-      <Button theme="link">普通链接按钮</Button>
-      <Button theme="link" level="danger">危险链接按钮</Button>
-    </div>
-    <div>
-      <Button theme="text" level="main">主要文字按钮</Button>
-      <Button theme="text">普通文字按钮</Button>
-      <Button theme="text" level="danger">危险文字按钮</Button>
-    </div>
-  </div>
-  <h1>示例4</h1>
-  <div>
-    <Button disabled>禁用按钮</Button>
-    <Button theme="link" disabled>禁用链接按钮</Button>
-    <Button theme="text" disabled>禁用文字按钮</Button>
-  </div>
-  <h1>示例5</h1>
-  <div>
-    <Button loading>加载中</Button>
-    <Button>加载完成</Button>
+    <h1>Button 示例</h1>
+    <section class="first-section">
+      <h2><span>#</span>常规使用</h2>
+      <p>使用<span>theme</span>属性来改变<span>Button</span>组件的样式</p>
+      <Demo :component="ButtonTheme"/>
+    </section>
+    <section class="first-section">
+      <h2><span>#</span>支持size</h2>
+      <p>使用<span>size</span>属性来改变<span>Button</span>组件的大小</p>
+      <Demo :component="ButtonSize"/>
+    </section>
+    <section class="first-section">
+      <h2><span>#</span>支持loading</h2>
+      <p>使用<span>loading</span>属性来改变<span>Button</span>组件的加载状态</p>
+      <Demo :component="ButtonLoading"/>
+    </section>
+    <section class="first-section">
+      <h2><span>#</span>支持level</h2>
+      <p>使用<span>level</span>属性来改变<span>Button</span>组件的重要等级</p>
+      <Demo :component="ButtonLevel"/>
+    </section>
+    <section class="first-section">
+      <h2><span>#</span>支持disabled</h2>
+      <p>使用<span>disabled</span>属性来改变<span>Button</span>组件的状态</p>
+      <Demo :component="ButtonDisabled"/>
+    </section>
   </div>
 </template>
 
 
 <script lang="ts">
-
+import Demo from './Demo.vue';
 import Button from '../lib/Button.vue';
+import ButtonSize from './ButtonComponents/ButtonSize.vue';
+import ButtonLoading from './ButtonComponents/ButtonLoading.vue';
+import ButtonTheme from './ButtonComponents/ButtonTheme.vue';
+import ButtonLevel from './ButtonComponents/ButtonLevel.vue';
+import ButtonDisabled from './ButtonComponents/ButtonDisabled.vue';
 
 export default {
-  components: {Button: Button},
+  components: {Demo, Button},
   setup() {
-    const onClick = () => {
-      console.log('你好');
-    };
-    return {onClick};
+    return {ButtonSize, ButtonLoading, ButtonTheme, ButtonLevel, ButtonDisabled};
   }
 };
 </script>
+
+<style lang="scss" scoped>
+span {
+  color: red;
+  line-height: 2;
+}
+</style>

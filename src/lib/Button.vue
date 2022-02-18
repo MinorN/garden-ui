@@ -1,7 +1,7 @@
 <template>
   <button class="garden-button"
           :class="classes"
-          :disabled="disabled">
+          :disabled="loading?true:false">
     <span v-if="loading" class="garden-loadingIndicator"></span>
     <slot/>
   </button>

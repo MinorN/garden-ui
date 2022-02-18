@@ -53,12 +53,21 @@ $color: #007974;
 
 .features {
   margin: 64px auto;
-  width: 400px;
   @media (min-width: 800px) {
     width: 800px;
+    >ul{
+      >li{
+        width: 50%;
+      }
+    }
   }
   @media (min-width: 1200px) {
     width: 1200px;
+    >ul{
+      >li{
+        width: 33.333%;
+      }
+    }
   }
 
   > ul {
@@ -121,6 +130,7 @@ $color: #007974;
   }
 }
 </style>
+
 <script>
 import Topnav from "../components/Topnav.vue";
 
