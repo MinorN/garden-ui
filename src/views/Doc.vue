@@ -88,7 +88,8 @@ $aside-index : 10;
 }
 
 aside {
-  background: lightblue;
+  background: #ffde5d;
+  background: linear-gradient(180deg, rgba(255,222,93,1) 0%, rgba(245,246,247,1) 100%);
   width: 150px;
   position: fixed;
   top: 0;

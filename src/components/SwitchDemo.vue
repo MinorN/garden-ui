@@ -17,6 +17,10 @@
       <Demo :component="SwitchLoading"/>
     </section>
   </div>
+  <div class="next">
+    <router-link to="/doc/get-started">上一节：开始使用</router-link>
+    <router-link to="/doc/button">下一节：Button组件</router-link>
+  </div>
 </template>
 
 <script lang="ts">
@@ -69,6 +73,10 @@ span{
       margin: 0;
     }
   }
+}
+.next{
+  display: flex;
+  justify-content: space-between;
 }
 </style>
 

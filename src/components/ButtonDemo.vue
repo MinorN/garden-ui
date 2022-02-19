@@ -27,6 +27,10 @@
       <Demo :component="ButtonDisabled"/>
     </section>
   </div>
+  <div class="next">
+    <router-link to="/doc/switch">上一节：Switch组件</router-link>
+    <router-link to="/doc/dialog">下一节：Dialog组件</router-link>
+  </div>
 </template>
 
 
@@ -51,5 +55,9 @@ export default {
 span {
   color: red;
   line-height: 2;
+}
+.next{
+  display: flex;
+  justify-content: space-between;
 }
 </style>

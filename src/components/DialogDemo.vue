@@ -22,6 +22,10 @@
       <Demo :component="DialogOpen"/>
     </section>
   </div>
+  <div class="next">
+    <router-link to="/doc/button">上一节：Button组件</router-link>
+    <router-link to="/doc/tabs">下一节：Tabs组件</router-link>
+  </div>
 </template>
 
 
@@ -46,6 +50,10 @@ export default {
 span{
   color: red;
   line-height: 2;
+}
+.next{
+  display: flex;
+  justify-content: space-between;
 }
 </style>
 

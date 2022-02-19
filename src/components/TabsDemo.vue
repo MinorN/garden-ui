@@ -5,6 +5,9 @@
     <p>使用<span>v-model</span>来绑定一个<span>Boolean</span>类型的变量到<span>Tabs</span>组件</p>
     <Demo :component="TabNormal"/>
   </section>
+  <div class="next">
+    <router-link to="/doc/dialog">上一节：Dialog组件</router-link>
+  </div>
 </template>
 
 

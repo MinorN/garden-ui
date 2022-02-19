@@ -46,8 +46,8 @@ $green: #02bcb0;
 $border-radius: 4px;
 $color: #007974;
 .topnavAndBanner {
-  background: rgb(227, 255, 253);
-  background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
+  background: rgb(5,17,33);
+  background: linear-gradient(145deg, rgba(5,17,33,1) 0%, rgba(36,86,149,1) 25%, rgba(126,72,230,1) 50%, rgba(141,22,196,1) 75%, rgba(36,36,36,1) 100%);
   clip-path: ellipse(80% 60% at 50% 40%);
 }
 
@@ -110,7 +110,7 @@ $color: #007974;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: $color;
+  color: white;
 
   > .actions {
     padding: 8px 0;
