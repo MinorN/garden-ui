@@ -9,6 +9,7 @@
             <span @click="close" class="garden-dialog-close"></span>
           </header>
           <main>
+            <slot/>
             <slot name="content"/>
           </main>
           <footer>
