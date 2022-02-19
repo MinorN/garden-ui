@@ -2,12 +2,12 @@
 打开终端运行下列命令：
 
 ```
-npm install garden-ui
+npm install garden-ui1
 ```
 
 或
 ```angular2html
-yarn add garden-ui
+yarn add garden-ui1
 ```
 
 下一节：[开始使用](#/doc/get-started)

@@ -3,7 +3,7 @@
 
 然后在你的代码中写入下面的代码
 ```angular2html
-import { Button, Tabs, Switch, Dialog } from "garden-ui"
+import { Button, Tabs, Switch, Dialog } from "garden-ui1"
 ```
 
 就可以使用我提供的组件了。
@@ -19,7 +19,7 @@ import { Button, Tabs, Switch, Dialog } from "garden-ui"
   </div>
 </template>
 <script>
-import {Button, Tabs, Switch, Dialog} from "garden-ui"
+import {Button, Tabs, Switch, Dialog} from "garden-ui1"
 export default {
   components: {Button}
 }
